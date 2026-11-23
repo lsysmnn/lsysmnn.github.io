@@ -32,6 +32,7 @@
   --serif-cn: "BrandScriptCN", "Noto Serif SC", "Songti SC", serif;
   --script: "BrandScript", "Brush Script MT", cursive;
   --sans: "BrandBody", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --note: "SimSun", "Songti SC", serif;
   --brand-grad: linear-gradient(150deg, #e6c4e7 0%, #c9a9e0 38%, #b5bdeb 72%, #aaf5ff 100%);
 }
 
@@ -150,6 +151,7 @@ a { color: inherit; text-decoration: none; }
 .hero-text { animation: rise .8s ease both; }
 .hero-kicker {
   display: inline-block;
+  font-family: var(--note);
   font-size: 12px;
   letter-spacing: 3px;
   color: var(--ink-soft);
@@ -306,7 +308,7 @@ a { color: inherit; text-decoration: none; }
   margin-left: 8px;
   letter-spacing: 0;
 }
-.section-sub { margin: 2px 0 0; font-size: 13px; color: var(--ink-soft); letter-spacing: .5px; }
+.section-sub { font-family: var(--note); margin: 2px 0 0; font-size: 13px; color: var(--ink-soft); letter-spacing: .5px; }
 
 /* 关于 */
 .about-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 28px; align-items: center; }
@@ -337,7 +339,7 @@ a { color: inherit; text-decoration: none; }
 }
 .about-cover { text-align: center; }
 .about-cover img { width: 100%; border-radius: 16px; box-shadow: var(--shadow); }
-.img-note { font-family: var(--script); color: #9fb4e0; font-size: 16px; margin: 10px 0 0; }
+.img-note { font-family: var(--note); color: #9fb4e0; font-size: 13px; letter-spacing: 1px; margin: 10px 0 0; }
 
 /* 吊饰横幅 */
 .charm-banner {
@@ -452,6 +454,7 @@ a { color: inherit; text-decoration: none; }
 .work-info p { margin: 0 0 12px; font-size: 12.5px; color: var(--ink-soft); line-height: 1.7; }
 .work-tag {
   display: inline-block;
+  font-family: var(--note);
   font-size: 11px;
   padding: 3px 10px;
   border-radius: 12px;
@@ -494,11 +497,12 @@ a { color: inherit; text-decoration: none; }
   color: var(--ink);
   margin: 0 0 12px;
 }
-.manifesto-note { font-size: 12px; color: var(--ink-soft); margin: 0; }
+.manifesto-note { font-family: var(--note); font-size: 12px; color: var(--ink-soft); margin: 0; }
 
 /* 技能 */
 .skill-cloud { display: flex; flex-wrap: wrap; gap: 12px; }
 .skill-cloud span {
+  font-family: var(--note);
   padding: 9px 20px;
   border-radius: 30px;
   font-size: 13px;
@@ -543,8 +547,8 @@ a { color: inherit; text-decoration: none; }
   text-align: left;
   flex-wrap: wrap;
 }
-.clabel { font-size: 12px; color: var(--ink-soft); min-width: 32px; }
-.contact-line code { flex: 1; font-family: var(--sans); font-size: 14px; color: var(--ink); word-break: break-all; }
+.clabel { font-family: var(--note); font-size: 12px; color: var(--ink-soft); min-width: 32px; }
+.contact-line code { flex: 1; font-family: var(--note); font-size: 15px; color: var(--ink); word-break: break-all; }
 .copy-btn {
   font-size: 12px;
   padding: 5px 14px;
